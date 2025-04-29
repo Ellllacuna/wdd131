@@ -53,3 +53,24 @@ img {
     max-width: 30%;
     padding-top: 20px;
 }
+
+.dark {
+    background-color: #333;
+}
+
+body.dark {
+    color: white;
+}
+
+.dark h2 {
+    color: rgb(160, 212, 237);
+}
+
+select.dark {
+    color: white;
+}
+
+select {
+    background-color: white;
+    color: black;
+}
