@@ -47,7 +47,7 @@ main {
     padding-top: 35px;
 }
 
-img {
+.logo {
     display: block;
     margin: 0 auto;
     max-width: 30%;
