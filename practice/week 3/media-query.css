@@ -1,0 +1,49 @@
+
+
+body {
+    font-family: Roboto;
+}
+
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    outline: rgba(67, 96, 133, 0.833) solid 1px;
+    padding: 1rem;
+    background: rgb(161, 191, 243);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 640px;
+    margin: 1rem auto;
+    outline: rgba(67,96,133,0.833) solid 1px;
+    padding: 1rem;
+    background: rgb(161,191,243);
+}
+
+section {
+    background: white;
+    padding: 10px;
+}
+
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    outline: rgba(67,96,133,0.833) solid 1px;
+    padding: 1rem;
+    background: rgb(161,191,243);
+}
+
+@media screen and (min-width: 500px) {
+    header {
+        background: black;
+        color: white;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
