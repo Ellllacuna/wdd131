@@ -22,6 +22,10 @@ button {
     font-size: 20px;
 }
 
+.hide {
+    display: none;
+}
+
 a {
     color: inherit;
     text-decoration: underline;
@@ -73,6 +77,32 @@ img {
 
 }
 
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+dialog img {
+    width: 90%;
+    height: 90%;
+    max-height: 100%;
+    margin: 20vh auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    outline: none;
+    box-shadow: none;
+}
+
+#close-viewer {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    background-color: white;
+    z-index: 1001;
+}
+
 @media screen and (min-width: 500px) {
 
 }
@@ -101,11 +131,16 @@ img {
         font-size: 19px;
     }
 
-    button {
+    .menu {
         display: none;
     }
 
     h1 {
         font-size: 50px;
+    }
+
+    #close-viewer {
+        top: 18%;
+        right: 17%;
     }
 }
