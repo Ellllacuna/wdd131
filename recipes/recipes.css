@@ -1,0 +1,156 @@
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header img {
+    height: 10%;
+    width: 10%;
+    margin-right:10px;
+}
+
+.search {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #838383;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.search button {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.recipe-card {
+    display: flex;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.recipe-card img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 50%;
+}
+
+.recipe-card .info {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    width: fit-content;
+}
+
+.recipe-card h2 {
+    color: #2d86b3;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.namerate {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    display: flex;
+}
+
+.attribution {
+    font-size: 0.6em;
+    text-decoration: none;
+    color: rgb(21, 69, 85);
+}
+
+footer {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-family:sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    gap: 0.2rem;
+    margin-right: 1rem;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 550px) {
+    .recipe-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .recipe-card img {
+        align-self: center;
+        width:100%;
+        height:auto;
+        margin-bottom: 1rem;
+    }
+    .tag {
+        font-size: 20px;
+    }
+    .info p {
+        display: none;
+    }
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
