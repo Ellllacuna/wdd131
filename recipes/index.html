@@ -7,7 +7,7 @@
     <meta author="Ellianna Llacuna">
     <meta desc="a recipe book">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js" defer></script>
     <link rel="icon" href="../creditcard/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,30 +26,13 @@
         </div>
 
         <div class="search">
-            <input type="text" placeholder="Find a recipe">
-            <button><img src="images/search.svg" alt="search"></button>
+            <input type="text" id="search-input" placeholder="Find a recipe">
+            <button id="search-button"><img src="images/search.svg" alt="search"></button>
         </div>
     </header>
 
     <main>
-        <section class="recipe-card">
-            <img src="images/apple-crisp.jpg" alt="Apple Crisp">
-            <div class="info">
-                <div class="tag">dessert</div>
-                <div class="namerate">
-                    <h2>Apple Crisp</h2>
-                    <div class="rating">
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty"></span>☆</span>
-                    </div>
-                </div>
-                 <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
-           
-        </section>
+        <section id="recipe-card-container" class="recipe-card-container"></section>
 
     </main>
 
