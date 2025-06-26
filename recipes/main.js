@@ -1,4 +1,4 @@
-import recipes from './recipes.mjs'; 
+import recipes from './recipes.js'; 
 
 function random(num) {
     return Math.floor(Math.random() * num);
