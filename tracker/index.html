@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donezo</title>
+    <meta name="author" content="">
+    <meta name="description" content="a site that helps you track your schoolwork">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="logos/Donezo_transparent-.png"alt="the logo for donezo">
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Task List</a></li>
+                <li><a href="#">Flash Cards</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="list-container">
+
+            <h1>Task List</h1>
+
+            <section class="task-list">
+                <ul id="tasks">
+                    <li class="task-item example">
+                        <label>
+                            <input type="checkbox">
+                            <span class="task-text-container">
+                                <span class="task-text">
+                                    <div class="task-name"><strong>Example Name</strong></div>
+                                    <div class="task-desc">Example Description, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi numquam placeat molestias</div>
+                                </span>
+                                <span class="task-date">
+                                    <div class="due-date">
+                                        <span class="due-date-label">Due: </span>
+                                        <span class="due-date-value">2025-07-16</span>
+                                    </div>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <button id="addTaskButton">+ Add Task</button>
+            <section >
+
+                <form id="taskForm" class="task-input">
+                    <h3>Add a New Task</h3>
+                    <div class="input-group">
+                        <label for="taskName">Task Name:</label>
+                        <input type="text" id="taskName" name="taskName" placeholder="e.g., Finish final project" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="taskDesc">Description:</label>
+                        <textarea id="taskDesc" name="taskDesc" placeholder="e.g., Make the website for task tracking" rows="3" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="dueDate">Due Date:</label>
+                        <input type="date" id="dueDate" name="duedate" required>
+                    </div>
+
+                    <button type="submit" id="addTaskButtonFinal">+ Add Task</button>
+                </form>
+            </section>
+        </section>
+
+        <section class="fun-facts">
+
+            <p id="studyTipText" class="ff-text">Placeholder text</p>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
