@@ -224,7 +224,75 @@ main{
   color: var(--accent2-color);
 }
 
+.flash-ad img {
+  height: 300px;
+  width: auto;
+  display: block;
+  border-radius: 10px;
+}
+.flash-ad {
+  background-color: #30A3D0;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+}
+.ad-text {
+  position: absolute;
+  color: var(--accent2-color);
+  font-family: var(--paragraph-font);
+  top: 13%;
+  left: 25%;
+  transform: rotate(-15deg);
+}
+.ad-text a {
+  text-decoration: none;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ad-text {
+  /* animation: spin 3s linear infinite;
+  This part is for the animation */
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  animation: rainbowGlow 3s infinite;
+}
+@keyframes rainbowGlow {
+  0%   { text-shadow: 0 0 10px red; }
+  25%  { text-shadow: 0 0 10px orange; }
+  50%  { text-shadow: 0 0 10px lime; }
+  75%  { text-shadow: 0 0 10px blue; }
+  100% { text-shadow: 0 0 10px violet; }
+}
+.text-container {
+  max-width: 570px;
+}
+
+
 .hidden {
   display: none !important;
 
+}
+
+
+@media (min-width: 1020px) {
+  .ad-text {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  animation: rainbowGlow 3s infinite;
+  position: absolute;
+  color: var(--accent2-color);
+  font-family: var(--paragraph-font);
+  top: 20%;
+  left: 15%;
+  transform: rotate(0deg);
+  margin: 20px;
+  }
 }
