@@ -222,6 +222,7 @@ main{
 .ff-text {
   text-align: center;
   color: var(--accent2-color);
+
 }
 
 .flash-ad img {
@@ -294,5 +295,24 @@ main{
   left: 15%;
   transform: rotate(0deg);
   margin: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .ad-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .ad-text {
+    font-size: 1rem;
+    left: 6%;
+    top: 30%;
+    background-color: rgba(66, 103, 183, 0.741);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+  }
+  header {
+    flex-direction: column;
   }
 }
