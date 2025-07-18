@@ -7,7 +7,7 @@
     <meta name="author" content="Ellianna Llacuna">
     <meta name="description" content="a site that helps you track your schoolwork - Flashcard Edition">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="flash.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +22,56 @@
             </ul>
         </nav>
     </header>
+
+    <main class="cards-main">
+        <section class="card-do">
+            <h3 class="page-title">Flashcard Maker</h3>
+            <div class="random-term">
+                <p>random Term</p>
+            </div>
+            <div class="random-def">
+                <p>random term definition</p>
+            </div>
+
+            <section class="action-btns">
+                <button class="direction-btns left-btn">&lt;</button>
+                <button class="show-cards-btn">Card List v</button>
+                <button class="direction-btns right-btn">&gt;</button>
+            </section>
+
+        </section>
+        <section class="card-list">
+            <h3>List of Cards</h3>
+            <ul class="card-list-ul">
+                <li class="card-item card-example">
+                        <div class="card-term">
+                            <h5>Term</h5>
+                        </div>
+                        <div class="card-def">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, possimus minima!</p>
+                        </div>
+                        <button class="delete-btn">🗑️</button>
+                </li>
+            </ul>
+
+            <button class="add-card">+ Add New Card</button>
+
+            <form class="new-card-form">
+                    <h3>Add a New Card</h3>
+                    <div class="input-group">
+                        <label for="term">Term:</label>
+                        <input type="text" id="term" name="term" placeholder="Enter in a term" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="def">Definition:</label>
+                        <textarea id="def" name="def" placeholder="Enter the definition" rows="3" required></textarea>
+                    </div>
+
+                    <button type="submit" id="add-card-button-final">+ Add Card</button>
+            </form>
+        </section>
+    </main>
     
 </body>
 </html>

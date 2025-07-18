@@ -64,3 +64,4 @@ const tipText = document.getElementById("studyTipText");
 
 const randomTip = studyTips[Math.floor(Math.random() * studyTips.length)];
 tipText.textContent = `${randomTip}`;
+
