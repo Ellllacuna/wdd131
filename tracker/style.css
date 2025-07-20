@@ -470,3 +470,72 @@ main{
     padding: 0;
   }
 }
+
+
+.save-him {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: visible;
+  margin: 10px;
+  animation: fadeOut 3s ease forwards;
+  animation-delay: 10s;
+}
+.base-image {
+  width: 100%;
+  height: auto;
+}
+.ufo {
+  height: 310px;
+  width: auto;
+  position: absolute;
+  top: 53%;
+  right: -100px;
+  transform: translateY(-50%);
+  animation: flyIn 3s forwards;
+}
+.he-is-saved {
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  font-family: var(--paragraph-font);
+  font-size: 30px;
+  animation: growGlow 2s forwards;
+}
+
+@keyframes flyIn {
+  0% {
+    right: -1000px;
+    opacity: 0;
+  }
+  100% {
+    right: 320px;
+    opacity: 1;
+  }
+}
+@keyframes growGlow {
+  0% {
+    transform: scale(0);
+    text-shadow: none;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px rgb(48, 12, 133),
+      0 0 20px rgb(32, 45, 161),
+      0 0 30px #ffa;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -110,8 +110,14 @@ showCardsBtn.addEventListener("click", () => {
     }
 });
 
-// make definition visibility toggalable
 
+// makes the man disapear after you have given him hair
 
+const section = document.querySelector('.save-him');
 
+section.addEventListener('animationend', (event) => {
+  if (event.animationName === "fadeOut") {
+    section.style.display = 'none';
+  }
+});
 
