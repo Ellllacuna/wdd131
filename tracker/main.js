@@ -54,14 +54,33 @@ taskForm.addEventListener("submit", (event) => {
 
 
 const studyTips = [
-    "Take regular breaks to improve focus and retention",
-    "Frogs drink with their skin",
-    "Create visual aids like charts or flashcards",
-    "Keep your study space clean and free of discractions"
+    {
+      text: "Take regular breaks to improve focus and retention",
+      image: "images/study-man-white.png"
+    },
+    {
+      text: "Frogs drink with their skin",
+      image: "images/frog-cute.png"
+    },
+    {
+      text: "Create visual aids like charts or flashcards",
+      image: "images/visual-aid.png"
+    },
+    {
+      text: "Keep your study space clean and free of distractions",
+      image: "images/clean.png"
+    },
+    {
+      text: "Some beetles cultivate their own food! Ambrosia beetles grow mushrooms in little gardens!",
+      image: "images/mushroom.png"
+    }
 ];
 
 const tipText = document.getElementById("studyTipText");
+const tipImage = document.getElementById("studyTipImage");
 
 const randomTip = studyTips[Math.floor(Math.random() * studyTips.length)];
-tipText.textContent = `${randomTip}`;
+tipText.textContent = randomTip.text;
+tipImage.src = randomTip.image;
+tipImage.atl = "image for: " + randomTip.text;
 

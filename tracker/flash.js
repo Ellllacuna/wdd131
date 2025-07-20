@@ -17,7 +17,7 @@ const rightBtn = document.querySelector(".right-btn");
 function showCard(index) {
     if (cards.length === 0) {
         termDisplay.textContent = "No cards available";
-        defDisplay.textContent = "";
+        defDisplay.innerHTML = '<img src="images/study-man-white.png" width="200" height="auto">';
         return
     }
     currentIndex = (index + cards.length) % cards.length;

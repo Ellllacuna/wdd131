@@ -222,7 +222,11 @@ main{
 .ff-text {
   text-align: center;
   color: var(--accent2-color);
-
+  padding: 20px;
+}
+#studyTipImage {
+  width: 200px;
+  height: auto;
 }
 
 .flash-ad img {
@@ -327,6 +331,8 @@ main{
 }
 
 .card-do {
+  /* background-image: url('images/indexcard-other-cropped.jpg'); */
+  background-size: 100% auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 10px;
